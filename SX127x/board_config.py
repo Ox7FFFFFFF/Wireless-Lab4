@@ -74,6 +74,7 @@ class BOARD:
         """
         BOARD.spi = spidev.SpiDev()
         BOARD.spi.open(spi_bus, spi_cs)
+        BOARD.spi.max_speed_hz = 10000000
         return BOARD.spi
 
     @staticmethod
