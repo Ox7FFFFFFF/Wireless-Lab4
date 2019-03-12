@@ -502,7 +502,8 @@ class LoRa(object):
 
     def get_pkt_snr_value(self):
         v = self.spi.xfer([REG.LORA.PKT_SNR_VALUE, 0])[1]
-        return float(256-v) / 4.
+        #return float(256-v) / 4.
+        return float(v) / 4.
 
     def get_pkt_rssi_value(self):
         v = self.spi.xfer([REG.LORA.PKT_RSSI_VALUE, 0])[1]

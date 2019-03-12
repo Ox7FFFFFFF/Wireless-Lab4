@@ -43,7 +43,6 @@ class LoRaWANrcv(LoRa):
         payload = self.read_payload(nocheck=True)
         #print("pkt_snr:",self.get_pkt_snr_value())
         #print("pkt_rssi:",self.get_pkt_rssi_value())
-        #print("rssi:",self.get_rssi_value())
         self.gateway.send2server(payload,FREQ,CODERATE,-30,15,SF,125)
         self.gateway.recvLoop(timeout=1) # timeout in second
 
