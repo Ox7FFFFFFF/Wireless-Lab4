@@ -299,7 +299,7 @@ class LoRa(object):
         #i -= mid * 1024
         #lsb = i
         #return self.spi.xfer([REG.LORA.FR_MSB | 0x80, 228, 212, 0])
-        print("f:",f,"msb:",msb,"mid:",mid,"lsb:",lsb)
+        #print("f:",f,"msb:",msb,"mid:",mid,"lsb:",lsb)
         return self.spi.xfer([REG.LORA.FR_MSB | 0x80, msb, mid, lsb])
 
     def get_pa_config(self, convert_dBm=False):
