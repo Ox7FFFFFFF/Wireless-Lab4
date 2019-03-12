@@ -42,6 +42,18 @@ class MODE:
     CAD      = 0x87
     FSK_STDBY= 0x01     # needed for calibration
 
+@add_lookup
+class AS923:
+    FREQ1 = 923.2
+    FREQ2 = 923.4
+    FREQ3 = 923.6
+    FREQ4 = 923.8
+    FREQ5 = 924.0
+    FREQ6 = 924.2
+    FREQ7 = 924.4
+    FREQ8 = 924.6
+    FREQ9 = 924.5
+    FREQ10 = 924.8
 
 @add_lookup
 class BW:
@@ -56,6 +68,14 @@ class BW:
     BW250   = 8
     BW500   = 9
 
+@add_lookup
+class SF:
+    SF7 = 7
+    SF8 = 8
+    SF9 = 9
+    SF10 = 10
+    SF11 = 11
+    SF12 = 12
 
 @add_lookup
 class CODING_RATE:
@@ -64,6 +84,12 @@ class CODING_RATE:
     CR4_7 = 3
     CR4_8 = 4
 
+@add_lookup
+class CODING_RATE_STR:
+    CR4_5 = "4/5"
+    CR4_6 = '4/6'
+    CR4_7 = '4/7'
+    CR4_8 = '4/8'
 
 @add_lookup
 class GAIN:
