@@ -44,16 +44,16 @@ class MODE:
 
 @add_lookup
 class AS923:
-    FREQ1 = 923.2
-    FREQ2 = 923.4
-    FREQ3 = 923.6
-    FREQ4 = 923.8
-    FREQ5 = 924.0
-    FREQ6 = 924.2
-    FREQ7 = 924.4
-    FREQ8 = 924.6
-    FREQ9 = 924.5
-    FREQ10 = 924.8
+    FREQ0 = 923.2
+    FREQ1 = 923.4
+    FREQ2 = 923.6
+    FREQ3 = 923.8
+    FREQ4 = 924.0
+    FREQ5 = 924.2
+    FREQ6 = 924.4
+    FREQ7 = 924.6
+    FREQ8 = 924.5
+    FREQ9 = 924.8
 
 @add_lookup
 class BW:
